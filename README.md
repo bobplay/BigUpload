@@ -1,6 +1,8 @@
+###Please note that this project is no longer being maintained, and has fallen quite a bit behind on modern standards. I might revisit it in the future, or if anyone would like to overhaul it feel free to send a PR/ask to take it over :)
+
 -------------------------------------------------------------------------
 
-BigUpload 
+#BigUpload 
 
 version 1.2    
 Created by: Sean Thielen <sean@p27.us>    
@@ -9,8 +11,6 @@ Created by: Sean Thielen <sean@p27.us>
 -------------------------------------------------------------------------
 
 BigUpload is a tool for handling large file uploads (tested up to 2GB) through the browser.
-
-![Screenshot](http://i.imgur.com/vESk5dp.png)
 
 -------------------------------------------------------------------------
 
