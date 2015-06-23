@@ -74,8 +74,8 @@ function bigUpload () {
 	parent = this;
 
 	//Quick function for accessing objects
-	this.$ = function(id) {
-		return document.getElementById(id);
+	this.$ = function(e) {
+		return typeof e === 'string' ? document.getElementById(e) : e;
 	};
 
 	//Resets all the upload specific data before a new upload
