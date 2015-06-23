@@ -1,4 +1,4 @@
-###Please note that this project is no longer being maintained, and has fallen quite a bit behind on modern standards. I might revisit it in the future, or if anyone would like to overhaul it feel free to send a PR/ask to take it over :)
+####Please note that this project is no longer being maintained, and has fallen quite a bit behind on modern standards. I might revisit it in the future, or if anyone would like to overhaul it feel free to send a PR/ask to take it over :)
 
 -------------------------------------------------------------------------
 
