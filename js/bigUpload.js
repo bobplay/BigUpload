@@ -71,7 +71,7 @@ function bigUpload () {
 
 	};
 
-	parent = this;
+	var parent = this;
 
 	//Quick function for accessing objects
 	this.$ = function(e) {
@@ -217,10 +217,17 @@ function bigUpload () {
 			xhr.send(blob);
 		};
 
+		//checks if browser is Internet Explorer (IE FileReader doesn't have the readAsBinaryString method) 
+		var isIE = (navigator.userAgent.indexOf("MSIE") != -1);
+		
 		//Slice the file into the desired chunk
 		//This is the core of the script. Everything else is just fluff.
 		var blob = this.uploadData.file.slice(start, stop);
-		reader.readAsBinaryString(blob);
+		if(isIE){
+			reader.readAsArrayBuffer(blob);
+		} else {
+			reader.readAsBinaryString(blob);
+		}
 	};
 
 	//This method is for whatever housekeeping work needs to be completed after the file is finished uploading.
