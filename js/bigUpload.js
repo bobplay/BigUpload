@@ -218,7 +218,7 @@ function bigUpload () {
 		};
 
 		//checks if browser is Internet Explorer (IE FileReader doesn't have the readAsBinaryString method) 
-		var isIE = (navigator.userAgent.indexOf("MSIE") != -1);
+		var isIE = ((navigator.userAgent.indexOf("MSIE") != -1) || (navigator.userAgent.indexOf("Trident") != -1));
 		
 		//Slice the file into the desired chunk
 		//This is the core of the script. Everything else is just fluff.
